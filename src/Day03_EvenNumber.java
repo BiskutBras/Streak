@@ -39,5 +39,7 @@ public class Day03_EvenNumber {
         String result = evenInts.toString();
         System.out.println(result);
 
+//        test push
+
     }
 }
