@@ -1,6 +1,5 @@
 public class Day02_Person {
 
-
     public static class Person {
         private String name;
         private int age;
@@ -34,7 +33,6 @@ public class Day02_Person {
                     '}';
         }
     }
-
 
     public static void main(String[] args) {
 
