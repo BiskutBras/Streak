@@ -2,7 +2,6 @@ public class Day01_ReverseString {
 
     public static String reverseString(String str) {
 
-
         StringBuilder sb = new StringBuilder();
 
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -13,10 +12,17 @@ public class Day01_ReverseString {
         return sb.toString();
     }
 
+    public static String reverseStringSimpler(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
+
     public static void main(String[] args) {
 
-        String reversedString = reverseString("54321");
-        System.out.println(reversedString);
+        String input = "54321";
+
+        String output = reverseStringSimpler(input);
+
+        System.out.println(output);
 
     }
 }
