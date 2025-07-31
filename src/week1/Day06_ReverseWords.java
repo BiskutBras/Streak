@@ -1,3 +1,5 @@
+package week1;
+
 public class Day06_ReverseWords {
 
     public static String reverseWords(String sentence) {

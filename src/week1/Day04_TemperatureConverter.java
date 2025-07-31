@@ -1,3 +1,5 @@
+package week1;
+
 public class Day04_TemperatureConverter {
 
     public static double fahrenheitToCelsius(double c) {

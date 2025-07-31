@@ -1,3 +1,5 @@
+package week1;
+
 public class Day02_Person {
 
     public static class Person {

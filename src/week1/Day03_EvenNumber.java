@@ -1,22 +1,21 @@
+package week1;
+
 import java.util.ArrayList;
 
 public class Day03_EvenNumber {
 
-    public static ArrayList filterEvenNumbers(int[] myInts) {
+    public static int[] filterEvenNumbers(int[] myInts) {
 
-        int i = 0;
-
-
-        ArrayList<Integer> resultList = new ArrayList<>();
+        int[] filtered = {};
 
         for (int number : myInts) {
 
             if (number % 2 == 0) {
-                resultList.add(number);
+//                filtered.add(number);
             }
         }
 
-        return resultList;
+        return filtered;
     }
 
     public static String toString(int[] myInts) {
@@ -34,10 +33,6 @@ public class Day03_EvenNumber {
     public static void main(String[] args) {
 
         int[] myInts = {3, 5, 2, 8, 2, 4, 2, 7, 8, 5, 7, 2, 1, 5, 5, 32};
-        ArrayList evenInts = filterEvenNumbers(myInts);
-
-        String result = evenInts.toString();
-        System.out.println(result);
 
     }
 }

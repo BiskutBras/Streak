@@ -1,3 +1,5 @@
+package week1;
+
 public class Day05_PalindromeChecker {
 
     public static boolean palindromeCheck(String s) {
