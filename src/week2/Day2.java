@@ -2,7 +2,7 @@ package week2;
 
 import java.util.HashSet;
 
-public class Day02 {
+public class Day2 {
 
     public static boolean hasAllUniqueChars(String input) {
         HashSet<Character> strSet = new HashSet<>();

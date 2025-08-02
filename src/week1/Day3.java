@@ -1,8 +1,6 @@
 package week1;
 
-import java.util.ArrayList;
-
-public class Day03_EvenNumber {
+public class Day3 {
 
     public static int[] filterEvenNumbers(int[] myInts) {
 

@@ -1,6 +1,6 @@
 package week1;
 
-public class Day06_ReverseWords {
+public class Day6 {
 
     public static String reverseWords(String sentence) {
 

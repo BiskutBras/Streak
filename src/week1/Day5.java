@@ -1,6 +1,6 @@
 package week1;
 
-public class Day05_PalindromeChecker {
+public class Day5 {
 
     public static boolean palindromeCheck(String s) {
 

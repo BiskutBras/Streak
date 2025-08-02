@@ -1,6 +1,6 @@
 package week1;
 
-public class Day04_TemperatureConverter {
+public class Day4 {
 
     public static double fahrenheitToCelsius(double c) {
 

@@ -1,6 +1,6 @@
 package week1;
 
-public class Day02_Person {
+public class Day2 {
 
     public static class Person {
         private String name;

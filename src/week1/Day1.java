@@ -1,6 +1,6 @@
 package week1;
 
-public class Day01_ReverseString {
+public class Day1 {
 
     public static String reverseStringSimpler(String str) {
         return new StringBuilder(str).reverse().toString();
