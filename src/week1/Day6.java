@@ -4,20 +4,17 @@ public class Day6 {
 
     public static String reverseWords(String sentence) {
 
-        int leftPointer = 0;
-        int rightPointer = 0;
+        // create an array where each word is the element
+        String[] words = sentence.split(" ");
+        StringBuilder reverseWord = new StringBuilder();
 
-        while (sentence.charAt(rightPointer) != ' ') {
-            rightPointer++;
+        // reverse each word an append with space
+        for (String word : words) {
+            reverseWord.append(new StringBuilder(word).reverse().append(" "));
         }
 
-        String word = sentence.substring(leftPointer, rightPointer);
-
-
-        for (int i = rightPointer - 1; i >= leftPointer; i--) {
-            System.out.println(sentence.charAt(i));
-        }
-        return null;
+        // remove the last space from sentence
+        return reverseWord.toString().trim();
     }
 
     public static void main(String[] args) {
