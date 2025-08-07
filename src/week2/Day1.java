@@ -1,23 +1,18 @@
 package week2;
 
-import java.util.HashSet;
+
+import java.util.HashMap;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Day1 {
 
     public static void userLogin() {
 
         // valid input
-        Set<String> validUserList = new HashSet<>();
-        validUserList.add("BiskutBras");
-        validUserList.add("Syahrul");
-        validUserList.add("Username");
-        String validPassword = "bukalahi01";
-
-        // boolean logic
-        boolean isUsernameValid = false;
-        boolean isPasswordValid = false;
+        HashMap<String, String> validAccount = new HashMap<>();
+        validAccount.put("BiskutBras", "biskutbras");
+        validAccount.put("Syahrul", "syahrul");
+        validAccount.put("Username", "username");
 
         // user input
         Scanner myScan = new Scanner(System.in);
@@ -25,25 +20,26 @@ public class Day1 {
         System.out.println("Enter your username here");
         String inputUsername = myScan.nextLine();
 
+        // validate username
+        if (!validAccount.containsKey(inputUsername)) {
+            System.out.println("Username does not exist!");
+            return;
+        }
+
         System.out.println("Enter the password");
         String inputPassword = myScan.nextLine();
 
+        // validate password
+        if (!validAccount.get(inputUsername).equals(inputPassword)) {
+            System.out.println("Password is incorrect!");
+            return;
+        }
+
         myScan.close();
 
-        // validate input
-        if (validUserList.contains(inputUsername)) {
-            isUsernameValid = true;
-        }
-        if (validPassword.equals(inputPassword)) {
-            isPasswordValid = true;
-        }
-
-        // print message
-        if (isUsernameValid && isPasswordValid) {
-            System.out.printf("Welcome %s", inputUsername);
-        } else {
-            System.out.println("Invalid credentials, please try again");
-        }
+        // successful login
+        System.out.println();
+        System.out.printf("Welcome %s", inputUsername);
 
     }
 
