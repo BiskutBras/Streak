@@ -3,7 +3,7 @@ package week4;
 public class Day4 {
 
     public static boolean armstrongNumber(int n) {
-        System.out.println("Day4.anagramChecker");
+        System.out.println("Day4.armstrongNumber");
 
         int digitCount = String.valueOf(n).length();
 

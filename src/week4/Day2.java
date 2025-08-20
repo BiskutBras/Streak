@@ -4,6 +4,8 @@ public class Day2 {
 
     public static int numberReversal(int n) {
 
+        System.out.println("Day2.numberReversal");
+
         int reverse = 0;
 
         while (n / 10 != 0) {

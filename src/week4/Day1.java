@@ -4,6 +4,8 @@ public class Day1 {
 
     public static String findTheWord(String sentence, int wordPosition) {
 
+        System.out.println("Day1.findTheWord");
+
         if (sentence == null || sentence.isBlank()) return "sentence is empty";
         if (wordPosition <= 0) return "please insert valid position";
 

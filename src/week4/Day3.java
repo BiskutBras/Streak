@@ -4,6 +4,8 @@ public class Day3 {
 
     public static int wordSearch(String sentence, String word) {
 
+        System.out.println("Day3.wordSearch");
+
         String cleaned = sentence.replaceAll("[^A-Za-z0-9\\s]", "");
 
         System.out.println(cleaned);
