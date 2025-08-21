@@ -2,6 +2,14 @@ package week1;
 
 public class Day2 {
 
+    public static void main(String[] args) {
+
+        Person p1 = new Person("abu", 39);
+        String p1Str = p1.toString();
+        System.out.println(p1Str);
+
+    }
+
     public static class Person {
         private String name;
         private int age;
@@ -34,13 +42,5 @@ public class Day2 {
                     ", age=" + age +
                     '}';
         }
-    }
-
-    public static void main(String[] args) {
-
-        Person p1 = new Person("abu", 39);
-        String p1Str = p1.toString();
-        System.out.println(p1Str);
-
     }
 }
